@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrackMe", "TrackMe.vcproj", "{292C23FE-397A-43E0-9B7E-579C9F362C1B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{40DB7444-F5C4-469D-B91C-2CC57C6B0F6D} = {40DB7444-F5C4-469D-B91C-2CC57C6B0F6D}
+		{29FFA84F-D9F6-484C-83BD-83FBE891B672} = {29FFA84F-D9F6-484C-83BD-83FBE891B672}
+		{613415C5-B621-4492-9C78-CAC3F3B3B43A} = {613415C5-B621-4492-9C78-CAC3F3B3B43A}
+		{4788C4D3-29D8-43AD-846D-F7E810FABB90} = {4788C4D3-29D8-43AD-846D-F7E810FABB90}
+		{CBD213EE-1A93-45A4-875A-F0C9D871B047} = {CBD213EE-1A93-45A4-875A-F0C9D871B047}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlowCore", "..\..\..\..\..\Libraries\FlowLib\Code\FlowCore\FlowCore.vcproj", "{613415C5-B621-4492-9C78-CAC3F3B3B43A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlowUI", "..\..\..\..\..\Libraries\FlowLib\Code\FlowUI\FlowUI.vcproj", "{29FFA84F-D9F6-484C-83BD-83FBE891B672}"
+	ProjectSection(ProjectDependencies) = postProject
+		{613415C5-B621-4492-9C78-CAC3F3B3B43A} = {613415C5-B621-4492-9C78-CAC3F3B3B43A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlowMedia", "..\..\..\..\..\Libraries\FlowLib\Code\FlowMedia\FlowMedia.vcproj", "{CBD213EE-1A93-45A4-875A-F0C9D871B047}"
+	ProjectSection(ProjectDependencies) = postProject
+		{613415C5-B621-4492-9C78-CAC3F3B3B43A} = {613415C5-B621-4492-9C78-CAC3F3B3B43A}
+		{4FCA09C7-BA4E-40E9-9A72-FE85FC8080F5} = {4FCA09C7-BA4E-40E9-9A72-FE85FC8080F5}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlowGraphics", "..\..\..\..\..\Libraries\FlowLib\Code\FlowGraphics\FlowGraphics.vcproj", "{4788C4D3-29D8-43AD-846D-F7E810FABB90}"
+	ProjectSection(ProjectDependencies) = postProject
+		{29FFA84F-D9F6-484C-83BD-83FBE891B672} = {29FFA84F-D9F6-484C-83BD-83FBE891B672}
+		{613415C5-B621-4492-9C78-CAC3F3B3B43A} = {613415C5-B621-4492-9C78-CAC3F3B3B43A}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlowGL", "..\..\..\..\..\Libraries\FlowLib\Code\FlowGL\FlowGL.vcproj", "{40DB7444-F5C4-469D-B91C-2CC57C6B0F6D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{613415C5-B621-4492-9C78-CAC3F3B3B43A} = {613415C5-B621-4492-9C78-CAC3F3B3B43A}
+		{4788C4D3-29D8-43AD-846D-F7E810FABB90} = {4788C4D3-29D8-43AD-846D-F7E810FABB90}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlowDX", "..\..\..\..\..\Libraries\FlowLib\Code\FlowDX\FlowDX.vcproj", "{4FCA09C7-BA4E-40E9-9A72-FE85FC8080F5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{613415C5-B621-4492-9C78-CAC3F3B3B43A} = {613415C5-B621-4492-9C78-CAC3F3B3B43A}
+		{4788C4D3-29D8-43AD-846D-F7E810FABB90} = {4788C4D3-29D8-43AD-846D-F7E810FABB90}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{292C23FE-397A-43E0-9B7E-579C9F362C1B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{292C23FE-397A-43E0-9B7E-579C9F362C1B}.Debug|Win32.Build.0 = Debug|Win32
+		{292C23FE-397A-43E0-9B7E-579C9F362C1B}.Release|Win32.ActiveCfg = Release|Win32
+		{292C23FE-397A-43E0-9B7E-579C9F362C1B}.Release|Win32.Build.0 = Release|Win32
+		{613415C5-B621-4492-9C78-CAC3F3B3B43A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{613415C5-B621-4492-9C78-CAC3F3B3B43A}.Debug|Win32.Build.0 = Debug|Win32
+		{613415C5-B621-4492-9C78-CAC3F3B3B43A}.Release|Win32.ActiveCfg = Release|Win32
+		{613415C5-B621-4492-9C78-CAC3F3B3B43A}.Release|Win32.Build.0 = Release|Win32
+		{29FFA84F-D9F6-484C-83BD-83FBE891B672}.Debug|Win32.ActiveCfg = Debug|Win32
+		{29FFA84F-D9F6-484C-83BD-83FBE891B672}.Debug|Win32.Build.0 = Debug|Win32
+		{29FFA84F-D9F6-484C-83BD-83FBE891B672}.Release|Win32.ActiveCfg = Release|Win32
+		{29FFA84F-D9F6-484C-83BD-83FBE891B672}.Release|Win32.Build.0 = Release|Win32
+		{CBD213EE-1A93-45A4-875A-F0C9D871B047}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CBD213EE-1A93-45A4-875A-F0C9D871B047}.Debug|Win32.Build.0 = Debug|Win32
+		{CBD213EE-1A93-45A4-875A-F0C9D871B047}.Release|Win32.ActiveCfg = Release|Win32
+		{CBD213EE-1A93-45A4-875A-F0C9D871B047}.Release|Win32.Build.0 = Release|Win32
+		{4788C4D3-29D8-43AD-846D-F7E810FABB90}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4788C4D3-29D8-43AD-846D-F7E810FABB90}.Debug|Win32.Build.0 = Debug|Win32
+		{4788C4D3-29D8-43AD-846D-F7E810FABB90}.Release|Win32.ActiveCfg = Release|Win32
+		{4788C4D3-29D8-43AD-846D-F7E810FABB90}.Release|Win32.Build.0 = Release|Win32
+		{40DB7444-F5C4-469D-B91C-2CC57C6B0F6D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{40DB7444-F5C4-469D-B91C-2CC57C6B0F6D}.Debug|Win32.Build.0 = Debug|Win32
+		{40DB7444-F5C4-469D-B91C-2CC57C6B0F6D}.Release|Win32.ActiveCfg = Release|Win32
+		{40DB7444-F5C4-469D-B91C-2CC57C6B0F6D}.Release|Win32.Build.0 = Release|Win32
+		{4FCA09C7-BA4E-40E9-9A72-FE85FC8080F5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4FCA09C7-BA4E-40E9-9A72-FE85FC8080F5}.Debug|Win32.Build.0 = Debug|Win32
+		{4FCA09C7-BA4E-40E9-9A72-FE85FC8080F5}.Release|Win32.ActiveCfg = Release|Win32
+		{4FCA09C7-BA4E-40E9-9A72-FE85FC8080F5}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		QtVersion = $(DefaultQtVersion)
+	EndGlobalSection
+EndGlobal

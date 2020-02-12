@@ -1,0 +1,34 @@
+// Fragment Shader
+// Phong lighting with 1 directional light source
+
+#version 330
+
+uniform sampler2D sImage;
+
+uniform Light
+{
+	vec4 vecDirection[2];
+	vec4 vecColor[2];
+} light;
+
+in Fragment
+{
+	vec3 vecNormal;
+	vec2 vecTexCoord;
+} fragment;
+
+out vec4 vecOutColor;
+
+void main()
+{
+	vec4 colorSum = vec4(0.0);
+		
+	for (int i = 0; i < 2; i++)
+	{
+		vec4 c = dot(-(light.vecDirection[i].xyz), fragment.vecNormal) * light.vecColor[i];
+		colorSum = clamp(colorSum + c, 0.0, 1.0);
+	}
+	
+	vecOutColor = colorSum * texture(sImage, fragment.vecTexCoord);
+	vecOutColor.a = 1.0;
+}

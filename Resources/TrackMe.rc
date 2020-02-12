@@ -1,0 +1,33 @@
+IDI_ICON1		ICON		DISCARDABLE	"trackme_64.ico"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,1,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x0L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080704b0"
+        BEGIN
+            VALUE "FileDescription", "TrackMe"
+            VALUE "FileVersion", "0, 1, 0, 0"
+            VALUE "InternalName", "TrackMe"
+            VALUE "LegalCopyright", "Copyright (c) 2011 Ralph Wiedemeier"
+            VALUE "OriginalFilename", "TrackMe.rc"
+            VALUE "ProductName", "TrackMe"
+            VALUE "ProductVersion", "0, 1, 0, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x807, 1200
+    END
+END

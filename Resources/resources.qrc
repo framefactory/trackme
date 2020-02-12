@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="trackme64">trackme_64.png</file>
+    </qresource>
+</RCC>
